@@ -1,5 +1,6 @@
 # Image Gallery with Slideshows
-Create an image gallery with some interactive features.
+Create an image gallery with some interactive features using HTML, CSS, JavaScript.
+
 Demo: https://aoyingxue.github.io/webdev-image-gallery/
 
 ## Requirements:
