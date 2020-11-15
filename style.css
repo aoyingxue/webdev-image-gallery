@@ -1,0 +1,96 @@
+/* header */
+.container-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-style: oblique;
+  font-family: "Montserrat";
+}
+
+/* thumbnail blocks */
+.thumbnail .img {
+  width: 240px;
+  height: 240px;
+}
+.img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* scale a little bit when hover */
+.thumbnail .img:hover {
+  transform: scale(1.1);
+}
+
+/* fullscreen */
+.fullScreen {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  overflow: auto; /*enable scroll when needed*/
+  z-index: 2;
+}
+.fullScreen-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* close button when hover */
+.close:hover,
+.close:focus {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none !important;
+    color:  rgb(103, 103, 103) !important;
+}
+/* previous button */
+#prevSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(100%,-50%);
+    font-size:40px;
+    left: 0;
+}
+
+/* next button */
+#nextSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%,-50%);
+    font-size:40px;
+    right: 0;
+}
+
+/* small screens */
+@media only screen and (max-width: 780px) {
+  .fullScreen-content {
+    width: 100%;
+  }
+}
